@@ -5,7 +5,7 @@ body {
   background-position: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 
 h1 {
@@ -157,5 +157,9 @@ p a {
   #show {
     top: 44%;
     right: 5%;
+  }
+
+  #showw{
+    right: 4%;
   }
 }
