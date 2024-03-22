@@ -50,7 +50,7 @@ function Login() {
                     <p id="show" onClick={showpass}>{show ? <FontAwesomeIcon icon={faEyeSlash} />
                         : <FontAwesomeIcon icon={faEye} />}</p>
                     <button type="submit" className="btn">SIGN IN</button>
-                    <p>Don't you have account?<Link to={"sign"}>Create One</Link></p>
+                    <p>Don't you have account?<Link to={'sign'}>Create One</Link></p>
 
                 </form>
             </div>
