@@ -6,7 +6,7 @@ import Login from './components/Login';
 function App() {
   return (
     <div className="App">
-    <Login />
+
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='sign' element={<Sign />} />
