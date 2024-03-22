@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  height: 100vh;
+  background: url(../images/back.jpeg);
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.card {
+  width: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
   color: white;
+  overflow: hidden;
+  padding: 8px 15px;
+  border-radius: 15px;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.card .input-box {
+  width: 100%;
+
+
+  margin: 30px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 0px;
+  color: #ffffff;
+
+}
+
+/* .input-box input:focus {
+  transform: scale(1);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px 0px 10px 10px;
+
+
+} */
+
+.input-box input::placeholder {
+  color: #ffffff;
+}
+
+.input-box h4 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding: 5px 0px;
+
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  transition: 1.5s ease !important;
+  text-transform: uppercase;
+  color: aqua;
+
+}
+
+#pass {
+  position: relative;
+}
+
+#show {
+  position: absolute;
+  cursor: pointer;
+  top: 44%;
+  right: 3%;
+}
+
+#show :hover {
+  color: aqua;
+}
+
+.card .btn {
+  width: 100%;
+  height: 45px;
+  background: #1146f5;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p a {
+  color: rgb(49, 255, 49) !important;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.error {
+  color: #f70000;
+  font-weight: 700;
+}
+
+@media (max-width:567px) {
+  .card {
+
+    width: 300px !important;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+    overflow: hidden;
+    padding: 8px 15px;
+    border-radius: 15px;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  #show {
+    top: 44%;
+    right: 5%;
   }
 }
