@@ -62,11 +62,11 @@ function Sign() {
                             placeholder="Password"
                             value={Password}
                             onChange={(e) => setpassword(e.target.value)}
-                            id="pass"
+                            id="passwor"
                         />
                         {Password.length < 8 && accept && <h5 className="error">Password must be more than 8 characters</h5>}
                     </div>
-                    <p id="show" on onClick={showpass}>{show?<FontAwesomeIcon icon={faEyeSlash}/>:<FontAwesomeIcon icon={faEye} /> }</p>
+                    <p id="showw" on onClick={showpass}>{show?<FontAwesomeIcon icon={faEyeSlash}/>:<FontAwesomeIcon icon={faEye} /> }</p>
                     <button type="submit" className="btn">Create</button>
                     <p>Do you have account?<Link to={'/'}>Sign In</Link></p>
 

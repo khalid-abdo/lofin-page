@@ -81,6 +81,19 @@ h1 {
 
 }
 
+#passwor {
+  position: relative;
+}
+
+#showw {
+  position: absolute;
+  cursor: pointer;
+  top: 64%;
+  right: 3%;
+}
+#showw :hover {
+  color: aqua;
+}
 #pass {
   position: relative;
 }
