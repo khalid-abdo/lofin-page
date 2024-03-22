@@ -67,7 +67,7 @@ function Sign() {
                     </div>
                     <p id="show" on onClick={showpass}>{show?<FontAwesomeIcon icon={faEyeSlash}/>:<FontAwesomeIcon icon={faEye} /> }</p>
                     <button type="submit" className="btn">Create</button>
-                    <p>Do you have account?<Link to={"/"}>Sign In</Link></p>
+                    <p>Do you have account?<Link to={""}>Sign In</Link></p>
 
                 </form>
             </div>
