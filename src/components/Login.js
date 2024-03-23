@@ -2,6 +2,7 @@ import { faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Welcome from "./Welcome";
 
 function Login() {
 
@@ -37,19 +38,21 @@ function Login() {
                     </div>
                     <div className="input-box">
                         <h4>Password</h4>
-                        <input type={show?"text" :"Password" }
+                        <input type={show ? "text" : "Password"}
                             placeholder="Password"
                             required value={Password}
                             onChange={(e) => setpassword(e.target.value)}
-                            id="pass"
+                            id="passs"
                         />
-
                         {Password.length < 8 && accept && <h5 className="error">Password must be more than 8 characters</h5>}
                     </div>
-                    
-                    <p id="show" onClick={showpass}>{show ? <FontAwesomeIcon icon={faEyeSlash} />
+
+
+                    <p id="showwe" onClick={showpass}>{show ? <FontAwesomeIcon icon={faEyeSlash} />
                         : <FontAwesomeIcon icon={faEye} />}</p>
-                    <button type="submit" className="btn">SIGN IN</button>
+                    {Password.length > 7 && accept != false && email != '' ? <button type="submit" className="btn"><Link to={'/Welcome'} id="mo" >SIGN IN</Link></button>
+                        : <button type="submit" className="btn">SIGN IN</button>}
+
                     <p>Don't you have account?<Link to={'/sign'}>Create One</Link></p>
 
                 </form>
