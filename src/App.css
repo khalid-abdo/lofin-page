@@ -145,6 +145,9 @@ p a {
 }
 
 @media (max-width:567px) {
+  body{
+    height: 100vh;
+  }
   .card {
 
     width: 300px !important;
