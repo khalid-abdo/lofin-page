@@ -82,14 +82,14 @@ h1 {
 }
 
 #passwor,
-#passs {
+#pass {
   position: relative;
 }
 
 #showw {
   position: absolute;
   cursor: pointer;
-  top: 64%;
+  top: 60% !important;
   right: 3%;
 }
 
@@ -99,7 +99,7 @@ h1 {
 
 
 
-#showwe {
+#show {
   position: absolute;
   cursor: pointer;
   top: 40%;
@@ -158,13 +158,14 @@ p a {
 
   }
 
-  #show {
-    top: 44%;
-    right: 5%;
+  #showwe {
+    top: 39%;
+    right: 6%;
   }
 
   #showw {
     right: 5%;
+    top: 60%;
   }
 
   h1 {

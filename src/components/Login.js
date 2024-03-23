@@ -42,13 +42,13 @@ function Login() {
                             placeholder="Password"
                             required value={Password}
                             onChange={(e) => setpassword(e.target.value)}
-                            id="passs"
+                            id="pass"
                         />
                         {Password.length < 8 && accept && <h5 className="error">Password must be more than 8 characters</h5>}
                     </div>
 
 
-                    <p id="showwe" onClick={showpass}>{show ? <FontAwesomeIcon icon={faEyeSlash} />
+                    <p id="show" onClick={showpass}>{show ? <FontAwesomeIcon icon={faEyeSlash} />
                         : <FontAwesomeIcon icon={faEye} />}</p>
                     {Password.length > 7 && accept != false && email != '' ? <button type="submit" className="btn"><Link to={'/Welcome'} id="mo" >SIGN IN</Link></button>
                         : <button type="submit" className="btn">SIGN IN</button>}
