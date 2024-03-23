@@ -51,7 +51,7 @@ function Login() {
                     <p id="show" onClick={showpass}>{show ? <FontAwesomeIcon icon={faEyeSlash} />
                         : <FontAwesomeIcon icon={faEye} />}</p>
                     {Password.length > 7 && accept != false && email != '' ? <button type="submit" className="btn"><Link to={'/Welcome'} id="mo" >SIGN IN</Link></button>
-                        : <button type="submit" className="btn">SIGN IN</button>}
+                        : <button type="submit" className="btn">SIGN-IN</button>}
 
                     <p>Don't you have account?<Link to={'/sign'}>Create One</Link></p>
 
